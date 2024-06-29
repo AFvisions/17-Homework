@@ -1,0 +1,81 @@
+body {
+    background-color: #ecece4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ecece4;
+    max-width: 1277px;
+    width: 100%;
+}
+
+table {
+    text-align: center;
+}
+
+header {
+    background-image: url("images/hero-image.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 697px;
+    max-height: 100%;
+
+
+}
+
+/* .logo {
+    display: flex;
+    align-items: center;
+    align-content: center;
+} */
+
+nav {
+    width: 50%;
+    max-width: 900px;
+}
+
+ul {
+    display: flex;
+    flex-direction: flex-start;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}
+
+/* .inline-block {
+    width: 100%;
+    max-width: 1400px;
+} */
+
+.logo {
+    margin: 30px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1277px;
+    width: 100%;
+
+}
+
+.starBeer {
+    position: relative;
+    margin-top: -250px;
+    max-height: 402px;
+    height: 100%;
+    max-width: 406px;
+    width: 100%;
+}
+
+.circleMusic {
+    max-height: 254px;
+    height: 100%;
+    max-width: 594px;
+    width: 100%;
+}
