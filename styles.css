@@ -1,7 +1,7 @@
 body {
     background-color: #ecece4;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ecece4;
+
     max-width: 1277px;
     width: 100%;
     margin: 0;
@@ -11,6 +11,16 @@ body {
 
 table {
     text-align: center;
+}
+
+img {
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin: auto;
 }
 
 header {
@@ -24,6 +34,7 @@ header {
     height: 60vh;
     width: 100%;
     min-height: 400px;
+    color: #ecece4;
     /* justify-content: center; */
 
 
@@ -91,10 +102,32 @@ li {
     width: 100%;
 }
 
+.threeByThree {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.gridText {
+width: 190px;
+font-size: 18pt;
+}
+
+/* .grid-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-bet
+} */
+
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
     header {
-        height: 50vh; /* Adjust height for smaller screens */
+        height: 50vh;
+        /* Adjust height for smaller screens */
     }
 
     nav ul {
@@ -109,7 +142,8 @@ li {
 
 @media (max-width: 480px) {
     header {
-        height: 40vh; /* Adjust height for even smaller screens */
+        height: 40vh;
+        /* Adjust height for even smaller screens */
     }
 
     .logo img {
@@ -120,7 +154,8 @@ li {
         flex-direction: column;
     }
 
-    .starBeer, .circleMusic {
+    .starBeer,
+    .circleMusic {
         max-width: 90%;
     }
 }
