@@ -4,7 +4,7 @@ body {
 
     max-width: 1277px;
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 
 }
@@ -14,7 +14,7 @@ table {
 }
 
 img {
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -76,6 +76,12 @@ li {
     margin: 30px;
 }
 
+.logo img {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .banner {
     display: flex;
     flex-direction: flex-start;
@@ -102,7 +108,7 @@ li {
     width: 100%;
 }
 
-.threeByThree {
+.circlesGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -135,10 +141,23 @@ footer {
 }
 
 /* Media queries for responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 972px) {
     header {
         height: 50vh;
         /* Adjust height for smaller screens */
+    }
+
+
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 803px) {
+    header {
+        height: 40vh;
+        /* Adjust height for even smaller screens */
     }
 
     nav ul {
@@ -146,14 +165,23 @@ footer {
         align-items: center;
     }
 
-    nav ul li {
-        margin-bottom: 10px;
+    .logo img {
+        max-width: 80%;
+    }
+
+    .banner {
+        flex-direction: row;
+    }
+
+    .starBeer,
+    .circleMusic {
+        max-width: 90%;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 704px) {
     header {
-        height: 40vh;
+        height: 30vh;
         /* Adjust height for even smaller screens */
     }
 
@@ -162,7 +190,28 @@ footer {
     }
 
     .banner {
-        flex-direction: column;
+        flex-direction: row;
+    }
+
+    .starBeer,
+    .circleMusic {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 30vh;
+        /* Adjust height for even smaller screens */
+    }
+
+    .logo img {
+        max-width: 80%;
+    }
+
+    .banner {
+        flex-direction: row;
+        display: none;
     }
 
     .starBeer,
