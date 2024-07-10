@@ -5,8 +5,7 @@ body {
     max-width: 1277px;
     width: 100%;
     margin: 0 auto;
-    padding: 0;
-
+    padding: 0 auto;
 }
 
 table {
@@ -51,12 +50,13 @@ header {
 nav {
     width: 50%;
     max-width: 900px;
-}
+} 
 
 ul {
     display: flex;
     flex-direction: flex-start;
     justify-content: space-between;
+    padding: 0px;
 }
 
 li {
